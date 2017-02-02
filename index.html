@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Number Guessing Game</title>
+</head>
+
+<body>
+    <h1>Number Guessing Game</h1>
+    <p> I have generated a random number from 1 to 100. Can you guess it in 10 tries? I'll tell you if your previous guess was
+        higher or lower than my number!</p>
+
+    <div class="form">
+        <label for="userInput">Enter a number: <input id="userInput" type="number">
+        <input type="submit" class="submitBtn" onclick="handlers.checkGuess()" value="Shoot">
+    </div>
+
+    <div class="textResults">
+        <p class="guesses"></p>
+        <p class="lastGuess"></p>
+        <p class="highOrLow"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
