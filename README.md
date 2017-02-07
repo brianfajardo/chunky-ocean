@@ -1,2 +1,2 @@
 # number-Guessing
-Talking my pet, Javascript, for a jog
+A simple little guessing game made with Javascript.
