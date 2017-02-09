@@ -13,6 +13,10 @@ var app = {
     guessCount: 1,
     previousGuesses: "",
     theNumber: "",
+    init: function(){
+        this.randomNumberGenerator();
+        userInput.focus();
+    },
     randomNumberGenerator: function () {
         answer = Math.floor(Math.random() * 100) + 1;
         this.theNumber = answer;
@@ -68,7 +72,7 @@ var app = {
             textResultsChildren[i].textContent = "";
         };
         resetBtn.parentNode.removeChild(resetBtn)
-        this.randomNumberGenerator();
+        this.init();
     }
 }
 
@@ -78,4 +82,4 @@ var handlers = {
         app.checkGuess();
     }
 }
-app.randomNumberGenerator();
+app.init();
